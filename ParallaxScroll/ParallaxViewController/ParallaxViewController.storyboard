@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Parallax View Controller-->
+        <scene sceneID="gbh-Bh-Yjc">
+            <objects>
+                <viewController storyboardIdentifier="ParallaxViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wDi-Va-zyf" customClass="ParallaxViewController" customModule="ParallaxScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0lJ-10-XjX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="100" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c3Z-L6-pNw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="uw4-Da-KO8">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uw4-Da-KO8" id="OUW-Ly-XnS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c3Z-L6-pNw" firstAttribute="top" secondItem="VmU-sj-Apu" secondAttribute="top" id="6eC-eZ-aL9"/>
+                            <constraint firstItem="VmU-sj-Apu" firstAttribute="bottom" secondItem="c3Z-L6-pNw" secondAttribute="bottom" id="C5Y-gM-BpP"/>
+                            <constraint firstItem="VmU-sj-Apu" firstAttribute="trailing" secondItem="c3Z-L6-pNw" secondAttribute="trailing" id="P74-hv-xvy"/>
+                            <constraint firstItem="c3Z-L6-pNw" firstAttribute="leading" secondItem="VmU-sj-Apu" secondAttribute="leading" id="rVu-Db-SMo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VmU-sj-Apu"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="c3Z-L6-pNw" id="bHm-gn-s7p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Arz-rr-wUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="125"/>
+        </scene>
+    </scenes>
+</document>

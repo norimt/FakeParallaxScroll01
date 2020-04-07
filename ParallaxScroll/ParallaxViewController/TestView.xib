@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestView" customModule="ParallaxScroll" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjb-5d-QVI">
+                    <rect key="frame" x="20" y="0.0" width="197" height="100"/>
+                    <state key="normal" title="Button1"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvi-9O-qRd">
+                    <rect key="frame" x="197" y="0.0" width="197" height="100"/>
+                    <state key="normal" title="Button2"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Pvi-9O-qRd" secondAttribute="trailing" constant="20" id="04C-Ji-YQS"/>
+                <constraint firstItem="gjb-5d-QVI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="9gB-E9-lGt"/>
+                <constraint firstItem="gjb-5d-QVI" firstAttribute="trailing" secondItem="Pvi-9O-qRd" secondAttribute="leading" constant="20" id="DXW-WC-7HN"/>
+                <constraint firstItem="Pvi-9O-qRd" firstAttribute="width" secondItem="gjb-5d-QVI" secondAttribute="width" id="JWB-wg-cBA"/>
+                <constraint firstItem="gjb-5d-QVI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K9D-B7-VZl"/>
+                <constraint firstAttribute="bottom" secondItem="gjb-5d-QVI" secondAttribute="bottom" id="TAm-Af-aaS"/>
+                <constraint firstItem="Pvi-9O-qRd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hlX-q5-f7i"/>
+                <constraint firstAttribute="bottom" secondItem="Pvi-9O-qRd" secondAttribute="bottom" id="vbN-P6-dl2"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="97"/>
+        </view>
+    </objects>
+</document>
